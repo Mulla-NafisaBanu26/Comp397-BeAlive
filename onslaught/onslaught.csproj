@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E31808DE-3C06-41E0-8BA5-50824FE19E43}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>onslaught</RootNamespace>
+    <AssemblyName>onslaught</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="bin\build.php" />
+    <Content Include="chrome_web_store\app\manifest.json" />
+    <Content Include="htdocs\cache.manifest" />
+    <Content Include="htdocs\font\cracked.ttf" />
+    <Content Include="htdocs\font\MedievalSharp.ttf" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="README.md" />
+    <Content Include="version.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chrome_web_store\app\icons\onslaught_128.png" />
+    <Content Include="chrome_web_store\app\icons\onslaught_16.png" />
+    <Content Include="chrome_web_store\app\icons\onslaught_24.png" />
+    <Content Include="chrome_web_store\app\icons\onslaught_32.png" />
+    <Content Include="chrome_web_store\app\icons\onslaught_48.png" />
+    <Content Include="chrome_web_store\description.txt" />
+    <Content Include="chrome_web_store\promo\header.png" />
+    <Content Include="chrome_web_store\promo\promo_210x140.png" />
+    <Content Include="chrome_web_store\promo\promo_585x220.png" />
+    <Content Include="chrome_web_store\promo\screenshot_1.png" />
+    <Content Include="chrome_web_store\promo\screenshot_2.png" />
+    <Content Include="htdocs\css\horde.css" />
+    <Content Include="htdocs\embeddable.html" />
+    <Content Include="htdocs\img\favicon.ico" />
+    <Content Include="htdocs\img\frame_background.png" />
+    <Content Include="htdocs\img\sheet_arena.png" />
+    <Content Include="htdocs\img\sheet_beholder.png" />
+    <Content Include="htdocs\img\sheet_characters.png" />
+    <Content Include="htdocs\img\sheet_objects.png" />
+    <Content Include="htdocs\img\sheet_ui.png" />
+    <Content Include="htdocs\index.html" />
+    <Content Include="htdocs\js\base.js" />
+    <Content Include="htdocs\js\engine.js" />
+    <Content Include="htdocs\js\image_loader.js" />
+    <Content Include="htdocs\js\keyboard.js" />
+    <Content Include="htdocs\js\mouse.js" />
+    <Content Include="htdocs\js\object.js" />
+    <Content Include="htdocs\js\object_types.js" />
+    <Content Include="htdocs\js\rect.js" />
+    <Content Include="htdocs\js\run_game.js" />
+    <Content Include="htdocs\js\size.js" />
+    <Content Include="htdocs\js\sound.js" />
+    <Content Include="htdocs\js\spawn_point.js" />
+    <Content Include="htdocs\js\spawn_wave.js" />
+    <Content Include="htdocs\js\timer.js" />
+    <Content Include="htdocs\js\vector2.js" />
+    <Content Include="htdocs\js\waves_demo.js" />
+    <Content Include="htdocs\js\waves_full.js" />
+    <Content Include="htdocs\robots.txt" />
+    <Content Include="htdocs\sound\effects\bat_damage.mp3" />
+    <Content Include="htdocs\sound\effects\bat_dies.mp3" />
+    <Content Include="htdocs\sound\effects\beholder_damage.mp3" />
+    <Content Include="htdocs\sound\effects\beholder_dies.mp3" />
+    <Content Include="htdocs\sound\effects\char_attacks.mp3" />
+    <Content Include="htdocs\sound\effects\char_attacks_fire.mp3" />
+    <Content Include="htdocs\sound\effects\char_attacks_ice.mp3" />
+    <Content Include="htdocs\sound\effects\char_damage_3.mp3" />
+    <Content Include="htdocs\sound\effects\char_dies.mp3" />
+    <Content Include="htdocs\sound\effects\code_entered.mp3" />
+    <Content Include="htdocs\sound\effects\coins.mp3" />
+    <Content Include="htdocs\sound\effects\cube_attacks.mp3" />
+    <Content Include="htdocs\sound\effects\cube_damage.mp3" />
+    <Content Include="htdocs\sound\effects\cube_dies.mp3" />
+    <Content Include="htdocs\sound\effects\cyclops_attacks.mp3" />
+    <Content Include="htdocs\sound\effects\cyclops_damage.mp3" />
+    <Content Include="htdocs\sound\effects\cyclops_dies.mp3" />
+    <Content Include="htdocs\sound\effects\demoblin_attacks.mp3" />
+    <Content Include="htdocs\sound\effects\dopp_attacks.mp3" />
+    <Content Include="htdocs\sound\effects\dopp_damage.mp3" />
+    <Content Include="htdocs\sound\effects\dopp_dies.mp3" />
+    <Content Include="htdocs\sound\effects\dragon_attacks.mp3" />
+    <Content Include="htdocs\sound\effects\dragon_damage.mp3" />
+    <Content Include="htdocs\sound\effects\dragon_dies.mp3" />
+    <Content Include="htdocs\sound\effects\eat_food.mp3" />
+    <Content Include="htdocs\sound\effects\eyelet_damage.mp3" />
+    <Content Include="htdocs\sound\effects\eyelet_dies.mp3" />
+    <Content Include="htdocs\sound\effects\gate_closes.mp3" />
+    <Content Include="htdocs\sound\effects\gate_opens.mp3" />
+    <Content Include="htdocs\sound\effects\gel_damage.mp3" />
+    <Content Include="htdocs\sound\effects\gel_dies.mp3" />
+    <Content Include="htdocs\sound\effects\goblin_attacks.mp3" />
+    <Content Include="htdocs\sound\effects\goblin_damage.mp3" />
+    <Content Include="htdocs\sound\effects\goblin_dies.mp3" />
+    <Content Include="htdocs\sound\effects\immunity.mp3" />
+    <Content Include="htdocs\sound\effects\imp_damage.mp3" />
+    <Content Include="htdocs\sound\effects\imp_dies.mp3" />
+    <Content Include="htdocs\sound\effects\minotaur_attacks.mp3" />
+    <Content Include="htdocs\sound\effects\minotaur_damage.mp3" />
+    <Content Include="htdocs\sound\effects\minotaur_dies.mp3" />
+    <Content Include="htdocs\sound\effects\move_pointer.mp3" />
+    <Content Include="htdocs\sound\effects\owlbear_alarm.mp3" />
+    <Content Include="htdocs\sound\effects\owlbear_attacks.mp3" />
+    <Content Include="htdocs\sound\effects\owlbear_damage.mp3" />
+    <Content Include="htdocs\sound\effects\owlbear_dies.mp3" />
+    <Content Include="htdocs\sound\effects\pause.mp3" />
+    <Content Include="htdocs\sound\effects\pickup_weapon.mp3" />
+    <Content Include="htdocs\sound\effects\sandworm_attacks.mp3" />
+    <Content Include="htdocs\sound\effects\sandworm_dies.mp3" />
+    <Content Include="htdocs\sound\effects\select_pointer.mp3" />
+    <Content Include="htdocs\sound\effects\skull_damage.mp3" />
+    <Content Include="htdocs\sound\effects\skull_dies.mp3" />
+    <Content Include="htdocs\sound\effects\spike_attacks.mp3" />
+    <Content Include="htdocs\sound\effects\unpause.mp3" />
+    <Content Include="htdocs\sound\effects\weapon_wall.mp3" />
+    <Content Include="htdocs\sound\effects\wizard_attacks.mp3" />
+    <Content Include="htdocs\sound\effects\wizard_disappear.mp3" />
+    <Content Include="htdocs\sound\effects\wizard_reappear.mp3" />
+    <Content Include="htdocs\sound\music\final_battle.mp3" />
+    <Content Include="htdocs\sound\music\normal_battle.mp3" />
+    <Content Include="htdocs\sound\music\victory.mp3" />
+    <Content Include="template\ad_leaderboard.html" />
+    <Content Include="template\chrome.template.html" />
+    <Content Include="template\web.template.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59343</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59343/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
